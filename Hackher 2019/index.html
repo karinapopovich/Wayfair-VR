@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Hello VR Furniture!</title>
+    <meta name="description" content="Hello VR Furniture">
+    <script src="https://aframe.io/releases/0.8.0/aframe.min.js"></script>
+  </head>
+  <body>
+    <a-scene>
+
+      <a-assets>
+        <a-asset-item id="model" src="http://img.wfrcdn.com/docresources/40128/108/1088857.glb"></a-asset-item>
+        <a-asset-item id="rug" src="http://img.wfrcdn.com/docresources/36985/107/1072374.glb"></a-asset-item>
+        <a-asset-item id="books" src="http://img.wfrcdn.com/docresources/0/146/1462330.glb"></a-asset-item>
+        <a-asset-item id="chair" src="http://img.wfrcdn.com/docresources/40128/115/1159971.glb"></a-asset-item>
+        <a-asset-item id="table" src="http://img.wfrcdn.com/docresources/34591/107/1077850.glb"></a-asset-item>
+      </a-assets>
+
+      <a-gltf-model position="1 0 -1" rotation="0 -45 0" src="#model">
+      </a-gltf-model>
+      <a-gltf-model position="0 0 0" rotation="0 -45 0" scale="1.25 1.25 1.25" src="#rug">
+      </a-gltf-model>
+      <a-gltf-model position="2.25 0 0" rotation="0 -45 0" src="#books">
+      </a-gltf-model>
+      <a-gltf-model position="-2 0 0" rotation="0 45 0" src="#chair">
+      </a-gltf-model>
+      <a-gltf-model position="-1 0 -1" rotation="0 45 0" src="#table">
+      </a-gltf-model>
+
+<a-box position="-0.15 2 0" scale="0.75 0.75 0.75" rotation="0 35 0" material="color: red"></a-box>
+
+      <a-text value="Hello, welcome to MoneyMoves!" color="#000" scale="2 2 2">
+        <a-animation attribute="position" from="10 0 0" to="2 4 -8"></a-animation>
+        <a-animation attribute="position" delay="3000"from="2 8 -8" to="10 10 10"></a-animation>
+      </a-text>
+
+      <a-text value="Here, we 'make money moves'!" position="-10 -10 -10"color="#000" scale="2 2 2">
+        <a-animation attribute="position" delay="3000"from="10 0 0" to="2 4 -8"></a-animation>
+        <a-animation attribute="position" delay="6000"from="2 8 -8" to="10 10 10"></a-animation>
+      </a-text>
+
+      <a-text value="My name is Red Bottoms. I am a cube. And I am your financial advisor." position="-10 -10 -10"color="#000" scale="2 2 2">
+        <a-animation attribute="position" delay="6000"from="10 0 0" to="2 4 -8"></a-animation>
+        <a-animation attribute="position" delay="12000"from="2 8 -8" to="10 10 10"></a-animation>
+      </a-text>
+
+      <a-text value="First, let's setup your Oculus Rift+Bose SoundTouch." position="-10 -10 -10"color="#000" scale="2 2 2">
+        <a-animation attribute="position" delay="12000"from="10 0 0" to="2 4 -8"></a-animation>
+        <a-animation attribute="position" delay="33000"from="2 8 -8" to="10 10 10"></a-animation>
+      </a-text>
+
+      <a-text value="Are you ready for your weekly report?" position="-10 -10 -10"color="#000" scale="2 2 2">
+        <a-animation attribute="position" delay="33000"from="10 0 0" to="2 4 -8"></a-animation>
+        <a-animation attribute="position" delay="38000"from="2 8 -8" to="10 10 10"></a-animation>
+      </a-text>
+
+      <a-text value="This week 42% of your spending was on eating out" position="-10 -10 -10"color="#000" scale="2 2 2">
+        <a-animation attribute="position" delay="38000"from="10 0 0" to="2 4 -8"></a-animation>
+        <a-animation attribute="position" delay="43000"from="2 8 -8" to="10 10 10"></a-animation>
+      </a-text>
+
+      <a-text value="31% on clothing, 18% on transportation, and 9% on miscellaneous things." position="-10 -10 -10"color="#000" scale="2 2 2">
+        <a-animation attribute="position" delay="43000"from="10 0 0" to="2 4 -8"></a-animation>
+        <a-animation attribute="position" delay="49000"from="2 8 -8" to="10 10 10"></a-animation>
+      </a-text>
+
+      <a-text value="I highly reccomend eating in to save money." position="-10 -10 -10"color="#000" scale="2 2 2">
+        <a-animation attribute="position" delay="49000"from="10 0 0" to="2 4 -8"></a-animation>
+        <a-animation attribute="position" delay="54000"from="2 8 -8" to="10 10 10"></a-animation>
+      </a-text>
+
+      <a-text value="I added some recipes and cooking ideas to your web portfolio. Check them out!" position="-10 -10 -10"color="#000" scale="2 2 2">
+        <a-animation attribute="position" delay="54000"from="10 0 0" to="2 4 -8"></a-animation>
+        <a-animation attribute="position" delay="60000"from="2 8 -8" to="10 10 10"></a-animation>
+      </a-text>
+
+
+      <a-sky color="#ECECEC"></a-sky>
+      <a-plane position="0 0 0" rotation="-90 45 0" width="4" height="4" color="#eae9c5"></a-plane>
+
+      <a-entity light="color: #FFF; intensity: 1.5" position="0 1 1"></a-entity>
+
+      <a-entity position="0 1.5 2.7" camera look-controls>
+        <a-camera></a-camera>
+      </a-entity>
+    </a-scene>
+  </body>
+</html>
